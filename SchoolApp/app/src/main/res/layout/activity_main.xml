@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:src="@drawable/salman"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@id/tv_title"
+        android:layout_height="wrap_content"
+        >
+    </ImageView>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center_horizontal"
+        android:textSize="50sp"
+        android:fontFamily="@font/bungee_inline"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/textInputEditTextEmail"
+        />
+
+    <EditText
+        android:id="@+id/textInputEditTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@id/textInputEditTextPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/bungee_inline"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/textInputEditTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/bungee_inline"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/ButtonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputEditTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_custom"
+        android:fontFamily="@font/bungee_inline"
+        android:text="@string/text_login"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewLinkRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="146dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="@string/text_not_member"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+</RelativeLayout>
